@@ -12,7 +12,10 @@
 <li>2.multipart/form-data:窗体数据被编码为一条消息，页上的每个控件对应消息的一部分</li>
 <li>3.text/plain：窗体数据以纯文本形式进行编码，其中不含任何控件和格式字符</li>
 <li>4.applacation/json:发送ajax请求中content-type:application/json,这样也能在后台接收前台提交的数据，其实这个时候前端提交的数据是json字符串，后端要用@requestbody注解来接收<h5 id="form的enctype属性为编码方式，常用有两种："><a href="#form的enctype属性为编码方式，常用有两种：" class="headerlink" title="form的enctype属性为编码方式，常用有两种："></a>form的enctype属性为编码方式，常用有两种：</h5><blockquote>
-<p>application/x-www-form-urlencoded和multipart/form-data<br>默认application/x-www-form-urlencoded。当请求方式为get时，浏览器用x-www-form-urlencoded的编码方式把form数据转换为一个字符串（name1=value1&amp;name2=value2…），然后把这个字符append到URL后面，并且用？分割，加载这个新的URL<br>当请求为post请求时，浏览器吧form数据封装到HTTP body中，然后发送到服务器</p>
+<ul>
+<li>application/x-www-form-urlencoded和multipart/form-data</li>
+<li>默认application/x-www-form-urlencoded。当请求方式为get时，浏览器用x-www-form-urlencoded的编码方式把form数据转换为一个字符串（name1=value1&amp;name2=value2…），然后把这个字符append到URL后面，并且用？分割，加载这个新的URL当请求为post请求时，浏览器吧form数据封装到HTTP body中，然后发送到服务器</li>
+</ul>
 </blockquote>
 </li>
 </ul>
